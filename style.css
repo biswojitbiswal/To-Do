@@ -9,7 +9,7 @@ body{
     align-items: center;
 }
 .container{
-    max-width:400px;
+    width:500px;
     background-color: #ffffff;
     border-radius: 1rem;
     display: flex;
@@ -156,7 +156,26 @@ h2{
     /* transform: scaleX(1.5rem); */
 }
 
-
+/* now changing media queries */
+@media  screen and (max-width: 600px) {
+    body 
+    {
+        background: white
+    }
+    .container{
+        margin:0;
+        padding: 0;
+        height:100vh;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    #task-container{
+        height: 100vh;
+        box-sizing: border-box;
+    }
+}
 
 
 
